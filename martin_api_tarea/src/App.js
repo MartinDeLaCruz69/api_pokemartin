@@ -2,6 +2,11 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const pokemonContainer = document.querySelector(".pokemon-container");
 
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  traerPokemon(input.value);
+})
+
 function traerPokemon() {
   fetch("https://pokeapi.co/api/v2/pokemon/pikachu/")
   .then((res) => res.json())
