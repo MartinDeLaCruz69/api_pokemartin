@@ -7,3 +7,9 @@ function traerPokemon() {
   .then((res) => res.json())
   .then((data) => console.log(data));
 }
+
+traerPokemon();
+
+function crearPokemon(pokemon){
+  
+}
