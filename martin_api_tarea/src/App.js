@@ -14,7 +14,7 @@ function traerPokemon(pokemon) {
     crearPokemon(data);
   });
 }
-
+ 
 function crearPokemon(pokemon){
     const img = document.createElement("img");
     img.src = pokemon.sprites.front_default;
