@@ -7,8 +7,8 @@ button.addEventListener("click", (e) => {
   traerPokemon(input.value);
 })
 
-function traerPokemon() {
-  fetch("https://pokeapi.co/api/v2/pokemon/pikachu/")
+function traerPokemon(pokemon) {
+  fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}/`)
   .then((res) => res.json())
   .then((data) => {
     crearPokemon(data);
